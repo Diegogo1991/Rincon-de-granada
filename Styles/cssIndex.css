@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Righteous',
+cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100;300&family=Kanit:ital,wght@0,300;0,500;1,200&family=Righteous&display=swap');
+/* font-family: 'Foldit', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Righteous', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bree+Serif&family=Francois+One&family=Kalnia:wght@300;400&family=Lora:wght@700&family=Merriweather:wght@400;900&family=Playfair+Display:wght@400;500&display=swap');
+/* font-family: 'Abril Fatface', serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Francois One', sans-serif;
+font-family: 'Kalnia', serif;
+font-family: 'Lora', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif; */
+
+#ultimo+div {
+   visibility: hidden;
+}
+
+body {
+   margin: 0;
+   /*background-size: cover;
+    background-repeat: no repeat;*/
+   font-family: 'Righteous';
+   /*animation: animate 1s linear infinite;*/
+}
+
+html {
+   font-size: 16px;
+
+   @media screen and (max-width: 340px) {
+      font-size: 12px;
+   }
+
+   @media screen and (min-width: 1000px) {
+      font-size: 20px;
+   }
+}
+
+@keyframes animate {
+   0% {
+      filter: hue-rotate(0deg);
+   }
+
+   100% {
+      filter: hue-rotate(360deg);
+   }
+}
+
+#hero {
+   min-height: 100vh;
+   width: 100%;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+   z-index: 5;
+   overflow: hidden;
+   justify-content: space-between;
+}
+
+#linkP {
+   text-decoration: none;
+   margin-right: 0;
+   /* background-color: rgba(0, 0, 0, 0.397); */
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+   /* height: auto; */
+   width: 100%;
+   display: none;
+   text-align: center;
+   justify-content: center;
+   position: relative;
+   top: 0vh;
+   z-index: 2;
+   box-sizing: border-box;
+   padding-top: 5vh;
+   padding-bottom: 5vh;
+   animation: desplegar 1s ease-out;
+}
+
+@keyframes desplegar {
+   from {
+     width: 0%; /* Altura inicial */
+   }
+   to {
+     width: 100%; /* Altura final, ajusta según sea necesario */
+   }
+ }
+
+#linkP a {
+   color: aliceblue;
+   text-decoration: none;
+   height: 100%;
+   width: 100%;
+   font-size: 1.2rem;
+   animation: teclear 3s steps(16);
+}
+
+#linkP img{
+   width: 100%;
+   animation: desplegarImagen 3s ease-out;
+}
+
+@keyframes desplegarImagen {
+   from {
+     width: 0%; /* Altura inicial */
+   }
+   to {
+     width: 100%; /* Altura final, ajusta según sea necesario */
+   }
+ }
+
+#mensaje{
+   font-family: 'Playfair Display';
+   z-index: 999;
+   position: absolute;
+   display: flex;
+   height: 35%;
+   width: 90%;
+   /* background-color: aquamarine;  */
+   background: url(../Img/png/mensaje.png) center/cover no-repeat;
+   border-radius: 10px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   color: white;
+   font-size: 1.5rem;
+   box-sizing: border-box;
+   padding: 0 5vw;
+   text-align: center;
+   animation: desplegarMensaje 1s ease-out;
+   transition: opacity 3s, height 3s; /* Ajusta la duración según tus preferencias */
+}
+
+@keyframes desplegarMensaje {
+   from {
+     height: 0%; /* Altura inicial */
+   }
+   to {
+     height: 35%; /* Altura final, ajusta según sea necesario */
+   }
+}
+
+#mensaje.oculto {
+   opacity: 0;
+   height: 0;
+}
+
+#invitacion{
+   display: none;
+   box-sizing: border-box;
+   height: 60vh;
+   width: 90%;
+   /* background-color: aquamarine; */
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 5vw;
+   color: white;
+   text-shadow: 0 0 10px black;
+   font-family: 'Righteous';
+}
+
+#invitacion p{
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+#accion{
+   display: flex;
+   height: 25%;
+   width: 60%;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: column;
+   background-color: rgba(0, 0, 0, 0.663);
+   border: 2px solid rgb(255, 208, 0);
+   border-radius: 25px;
+   box-shadow: 0 0 15px rgb(255, 170, 1);
+   animation: desplegarAccion 1s ease-out;
+   color: white;
+   text-shadow: 0 0 8px rgba(255, 234, 3, 0.67);
+}
+
+#accion i{
+   font-size: 2rem;
+}
+
+@keyframes desplegarAccion {
+   from {
+     width: 0%; /* Altura inicial */
+   }
+   to {
+     width: 60%; /* Altura final, ajusta según sea necesario */
+   }
+}
+
+video {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+}
+
+audio {
+   display: none;
+}
+
+.capa {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #1c1c1d;
+   opacity: 0.7;
+   mix-blend-mode: overlay;
+   z-index: 5;
+}
+
+.aviso {
+   color: aliceblue;
+   text-align: center;
+   margin-top: 30%;
+   font-size: 1.2rem;
+}
+
+.transicion {
+   transition: opacity 0.3s ease-in-out;
+}
+
+/* TODO LO DEL FOOTER */
+.footer{
+   /* padding-top: 3rem; */
+   background: url(../Img/footer/footer.png) no-repeat;
+   background-size: cover;
+   background-position: center;
+   z-index: 40;
+}
+
+.footer .caja-contenedor{
+   display: flex;
+   flex-wrap: wrap; /*PENDIENTE*/
+}
+
+.footer .caja-contenedor .caja{
+   flex: 1 1 25rem;
+   margin: 1vw;
+   text-align: center;
+   justify-content: center;
+}
+
+.footer .caja-contenedor .caja h3{
+   font-size: 2rem;
+   flex-wrap: wrap; /*PENDIENTE*/
+   padding: 1vh 0;
+   color: khaki;
+   text-shadow: 0 0 15px black;
+   text-decoration: underline;
+   text-underline-offset: 1rem;
+   font-family: 'Merriweather';
+}
+
+.footer .caja-contenedor .caja p{
+   height: auto;
+   font-size: 1rem;
+   padding: 1vh 1vw;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 15px black;
+}
+
+.footer .caja-contenedor .caja a{
+   display: block;
+   font-size: 1.5rem;
+   padding: .5rem 0;
+   color: burlywood;
+   color: navajowhite;
+   color: khaki;
+   color: gold;
+   color: moccasin;
+   color: wheat;
+}
+
+.footer .caja-contenedor .caja a:hover{
+   text-decoration: underline;
+}
+
+.footer .caja-contenedor .caja .info{
+   display: flex;
+   width: auto;
+   flex-wrap: nowrap;  /*PENDIENTE*/
+   align-items: center;
+   justify-content: center;
+}
+
+
+.footer .caja-contenedor .caja .info i{
+   margin: .5rem 0;
+   margin-right: 1rem;
+   border-radius: 50%;
+   background: whitesmoke;
+   color: var(--orange);
+   font-size: 1.6rem;
+   height: 3rem;
+   width: 3rem;
+   line-height: 3rem;
+   text-align: center;
+}
+/*PENDIENTE*/
+.footer .caja-contenedor .caja .info p {
+   height: auto;
+   /*width: 100%;*/
+   font-size: 1rem;
+   padding: .5rem 0;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 15px black;
+}
+
+.footer .creditos{
+   font-size: .8rem;
+   font-family: normal;
+   letter-spacing: .1rem;
+   color: rgb(255, 255, 255);
+   text-shadow: 0 0 10px black;
+   border-top: .1rem solid white;
+   padding: 1rem 1rem;
+   width: 100%;
+   text-align: center;
+}
+
+@media (max-width:350px) {
+
+   .footer .caja-contenedor{
+      display: flex;
+      flex-wrap: wrap; /*PENDIENTE*/
+   }
+
+   .footer .caja-contenedor .caja{
+      flex: 1 1 25rem;
+      margin: .5rem;
+      text-align: center;
+      justify-content: center;
+   }
+
+   .footer .caja-contenedor .caja h3{
+      font-size: 1.5rem;
+      flex-wrap: wrap; /*PENDIENTE*/
+      padding: 2vh 0;
+      margin: 0;
+
+   }
+
+   .footer .caja-contenedor .caja p{
+      height: auto;
+      font-size: .8rem;
+      padding: 1vh 0;
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 15px black;
+   }
+
+   .footer .caja-contenedor .caja a{
+      display: block;
+      font-size: 1rem;
+      padding: .5rem 0;
+
+   }
+
+   .footer .caja-contenedor .caja .info i{
+      font-size: 1rem;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+   }
+   /*PENDIENTE*/
+   .footer .caja-contenedor .caja .info p{
+      height: auto;
+      /*width: 100%;*/
+      font-size: .8rem;
+   }
+}
