@@ -118,7 +118,7 @@ html {
 #triangulo{
    color: rgb(255, 208, 0);
    position: absolute;
-   bottom: 2vh;
+   bottom: 6vh;
    font-size: 2rem;
    text-shadow: 0 0 10px black;
 }
