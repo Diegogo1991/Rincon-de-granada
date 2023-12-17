@@ -118,7 +118,7 @@ html {
 #triangulo{
    color: rgb(255, 208, 0);
    position: absolute;
-   bottom: 8vh;
+   bottom: 9vh;
    font-size: 2rem;
    text-shadow: 0 0 10px black;
 }
@@ -291,6 +291,7 @@ audio {
 .footer .caja-contenedor .caja a{
    display: block;
    font-size: 1.5rem;
+   text-shadow: 0 0 10px black;
    padding: .5rem 0;
    color: burlywood;
    color: navajowhite;
