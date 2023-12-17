@@ -115,6 +115,14 @@ html {
    }
  }
 
+#triangulo{
+   color: rgb(255, 208, 0);
+   position: absolute;
+   bottom: 2vh;
+   font-size: 2rem;
+   text-shadow: 0 0 10px black;
+}
+
 #mensaje{
    font-family: 'Playfair Display';
    z-index: 999;

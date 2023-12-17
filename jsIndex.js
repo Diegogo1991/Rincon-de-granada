@@ -7,6 +7,13 @@ import { funcGene } from "./Scripts/functions.js";
 //COLOCAR VIDEO ALEATORIO
 setTimeout(funcGene.fondoAleatorio, 1);
 
+//funcion para hacer focus al footer
+var enfocador = document.getElementById('triangulo');
+enfocador.addEventListener('click', ()=>{
+    let footer = document.getElementById('footer');
+    footer.scrollIntoView({ behavior: 'smooth' });
+});
+
 // const typed = new Typed('.typed', {
 //    strings: ['INVITACIÓN <br> CUARTA REVOLUCIÓN <BR> INDUSTRIAL'],
 //    typeSpeed: 75,
@@ -84,7 +91,7 @@ const typed = new Typed('.mensaje', {
             document.getElementById('invitacion').style.display = 'flex';
 
             const typed = new Typed('.invitacion', {
-                strings: ['<p>Si estás viendo esto es porque te tomaste el tiempo de apreciar una obra de arte y eso no cualquier persona lo hace. Por eso te felicitamos y te motivamos a que sigas en el camino hacia eso que deseas. Eres importante para nosotros y por eso nos interesa de corazón saber:</p>'],
+                strings: ['<p>Si estás viendo esto es porque te tomaste el tiempo de apreciar una obra de arte y eso no cualquier persona lo hace. Por eso te felicitamos y te motivamos a que sigas en el camino hacia eso que deseas. Eres importante para nosotros y por eso nos interesa saber de corazón:</p>'],
                 typeSpeed: 25,
                 startDelay: 1500,  // Retraso de 1 segundo antes de comenzar la animación
                 cursorChar: '',  
@@ -119,7 +126,6 @@ const typed = new Typed('.mensaje', {
         }, 3500);
     }
 });
-
 
 //FUNCIÓN MOVER IMAGENES
 function moverObjeto(objeto, velocidadX, velocidadY) {
