@@ -119,7 +119,8 @@ const typed = new Typed('.mensaje', {
                     });
 
                     boton.addEventListener('click', ()=>{
-                        window.open('https://www.google.com/maps/place/El+Rincon+de+Granada+cali/@3.4632101,-76.5326204,17z/data=!4m11!3m10!1s0x8e30a71bbd5fb603:0x2c532d585b64a33b!5m2!4m1!1i2!8m2!3d3.4632101!4d-76.5326204!9m1!1b1!16s%2Fg%2F11j4drx9lv?authuser=0&entry=ttu', '_blank');
+                        /*window.open('https://www.google.com/maps/place/El+Rincon+de+Granada+cali/@3.4632101,-76.5326204,17z/data=!4m11!3m10!1s0x8e30a71bbd5fb603:0x2c532d585b64a33b!5m2!4m1!1i2!8m2!3d3.4632101!4d-76.5326204!9m1!1b1!16s%2Fg%2F11j4drx9lv?authuser=0&entry=ttu', '_blank');*/
+                        window.location.href='https://search.google.com/local/writereview?placeid=ChIJA7ZfvRunMI4RO6NkW1gtUyw';
                     })
                 }
             });
