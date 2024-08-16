@@ -91,7 +91,7 @@ const typed = new Typed('.mensaje', {
             document.getElementById('invitacion').style.display = 'flex';
 
             const typed = new Typed('.invitacion', {
-                strings: ['<p>Si estás viendo esto es porque te tomaste el tiempo de apreciar una obra de arte y eso no cualquier persona lo hace. Por eso te felicitamos y te motivamos a que sigas en el camino hacia eso que deseas. Eres importante para nosotros y por eso nos interesa saber de corazón:</p>'],
+                strings: ['<p>Estás viendo esto porque te tomaste el tiempo de disfrutar una obra de arte y eso no cualquier persona lo hace. Por eso te felicitamos y te motivamos a que sigas en el camino hacia eso que deseas. Eres importante para nosotros y por eso nos interesa saber de corazón:</p>'],
                 typeSpeed: 25,
                 startDelay: 1500,  // Retraso de 1 segundo antes de comenzar la animación
                 cursorChar: '',  
@@ -120,7 +120,9 @@ const typed = new Typed('.mensaje', {
 
                     boton.addEventListener('click', ()=>{
                         /*window.open('https://www.google.com/maps/place/El+Rincon+de+Granada+cali/@3.4632101,-76.5326204,17z/data=!4m11!3m10!1s0x8e30a71bbd5fb603:0x2c532d585b64a33b!5m2!4m1!1i2!8m2!3d3.4632101!4d-76.5326204!9m1!1b1!16s%2Fg%2F11j4drx9lv?authuser=0&entry=ttu', '_blank');*/
-                        window.location.href='https://search.google.com/local/writereview?placeid=ChIJA7ZfvRunMI4RO6NkW1gtUyw';
+                        /*window.location.href='https://search.google.com/local/writereview?placeid=ChIJA7ZfvRunMI4RO6NkW1gtUyw';*/
+                        window.location.href='https://www.google.com/maps/search/?api=1&query=El+Rincon+de+Granada+cali&query_place_id=ChIJA7ZfvRunMI4RO6NkW1gtUyw';
+                        /*window.open('https://www.google.com/maps/place/El+Rincon+de+Granada+cali/@3.4632101,-76.5326204,17z/data=!4m12!3m11!1s0x8e30a71bbd5fb603:0x2c532d585b64a33b!5m3!1s2024-08-24!4m1!1i2!8m2!3d3.4632101!4d-76.5326204!9m1!1b1!16s%2Fg%2F11j4drx9lv?entry=ttu');*/
                     })
                 }
             });
