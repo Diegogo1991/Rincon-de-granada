@@ -46,7 +46,7 @@ botonCambiar.addEventListener('click', cambiarCancion); */
 
 //FUNCION FONDO ALEATORIO
 function fondoAleatorio() {
-   var indice = Math.floor(Math.random() * 13);
+   var indice = Math.floor(Math.random() * 17); /*AQUÍ SE INDICA LA CANTIDAD DE VIDEOS*/
    var video = document.getElementById('video');
    video.src = `./Videos/${indice}.mp4`;
 }
@@ -67,7 +67,7 @@ export const funcBucles = {
 
 //FUNCION FONDO ALEATORIE (BUCLES)
 function fondoAleatorie() {
-   var indice = Math.floor(Math.random() * 12);
+   var indice = Math.floor(Math.random() * 17);
    var video = document.getElementById('video');
    video.src = `./Videos/FEVDS/${indice}.mp4`;
 }
